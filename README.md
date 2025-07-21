@@ -35,7 +35,7 @@ This project is an intelligent research assistant that autonomously conducts res
 ---
 
 ## Architecture diagram
-![Untitled Diagram drawio](https://github.com/user-attachments/assets/e9cdbe76-0237-45bb-9035-5d2db0a7d707)
+![Research_Agent_Architecture drawio](https://github.com/user-attachments/assets/d1503e7b-39ee-41b3-a614-d2d6409df785)
 
 The system is designed in 4 layers, implemented as shown in the architecture diagram.
 
