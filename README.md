@@ -16,7 +16,6 @@ This project is an intelligent research assistant that automates literature revi
 - 📝 Generates a final report with:
   - Findings (Finding 1, Finding 2...)
   - Executive Summary
-  - IEEE-style hyperlinked References
 - 📄 Export options: PDF, Word (.docx), Markdown, and Text
 
 ---
