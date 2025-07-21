@@ -1,0 +1,41 @@
+# Core LLM and LangChain tools
+langchain
+langgraph
+streamlit
+
+# LLM integration (Ollama bindings for LangChain)
+ollama
+langchain-ollama
+
+# Vector database
+chromadb
+langchain-chroma
+
+# Web search and scraping
+ddgs
+requests
+beautifulsoup4
+newspaper3k
+
+# PDF/document processing
+pymupdf
+
+# Text splitting
+langchain-text-splitters
+
+# Academic document loaders (arxiv and pubmed handled via langchain_community)
+arxiv
+pubmed
+
+# Exporting
+fpdf
+python-docx
+
+# Testing
+pytest
+
+# For environment variables (if needed)
+python-dotenv
+
+# Progress bar, CLI niceties
+tqdm
