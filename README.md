@@ -80,6 +80,7 @@ Powered by LLaMA (mistral:latest)
 Responsible for planning, summarizing, verifying, and writing
 
 ## 📝 Setup & Installation
+
 Prerequisites:
 
 Python 3.10+
@@ -88,13 +89,13 @@ pip
 
 virtualenv
 
-Clone the repository:
+## Clone the repository
 
 git clone https://github.com/<your-username>/intelligent-research-assistant.git
 
 cd intelligent-research-assistant
 
-Create virtual environment & activate:
+## Create virtual environment & activate
 
 python -m venv venv
 
@@ -102,11 +103,11 @@ source venv/bin/activate     # Linux/macOS
 
 venv\Scripts\activate        # Windows
 
-Install dependencies:
+## Install dependencies
 
 pip install -r requirements.txt
 
-Run the application:
+## Run the application
 
 streamlit run app.py
 
