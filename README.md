@@ -1,6 +1,6 @@
 # 🧠 AI Research Agent for Healthcare Diagnostics
 
-This project is an intelligent research assistant that automates literature review and question-answering for medical diagnostics using AI. It focuses on domain-specific topics such as breast cancer and brain tumor detection, leveraging cutting-edge technologies like LLMs, vector stores, and academic/web scraping.
+This project is an intelligent research assistant that autonomously conducts research, synthesizes information, and produces a comprehensive report on a given research question.This project automates literature review and question-answering for medical diagnostics using AI. It focuses on domain-specific topics such as breast cancer and brain tumor detection, leveraging cutting-edge technologies like LLMs, vector stores, and academic/web scraping.
 
 > 📌 Example Question: _"How does AI help to detect brain tumors?"_
 
@@ -35,3 +35,89 @@ This project is an intelligent research assistant that automates literature revi
 ---
 
 ## Architecture diagram
+![Untitled Diagram drawio](https://github.com/user-attachments/assets/e9cdbe76-0237-45bb-9035-5d2db0a7d707)
+
+The system is designed in 4 layers, implemented as shown in the architecture diagram.
+
+1️⃣ User Interface
+Implemented with Streamlit
+
+Accepts user research topic
+
+Displays real-time progress of research nodes
+
+Shows final report and allows export
+
+2️⃣ Orchestration Layer
+Implemented using LangGraph
+
+Defines workflow as a graph of nodes and edges
+
+Nodes:
+
+📋 Planner Node: breaks down research topic into sub-questions
+
+🔍 Information Gatherer Node: queries multiple sources
+
+📝 Synthesis Node: organizes and drafts findings
+
+✅ Verifier Node: fact-checks and assigns confidence scores
+
+📄 Report Generator Node: formats final report, adds citations & summary
+
+Handles state management, retries, and conditional flows
+
+3️⃣ Data & Knowledge Sources
+🌐 Web Search: DDGS (DuckDuckGo Search API)
+
+📚 Academic Papers: PubMed, arXiv
+
+📄 Local Documents: PDF/text parser (PyMuPDF)
+
+4️⃣ LLM & Reasoning
+Powered by LLaMA (mistral:latest)
+
+Responsible for planning, summarizing, verifying, and writing
+
+## 📝 Setup & Installation
+Prerequisites:
+
+Python 3.10+
+
+pip
+
+virtualenv
+
+Clone the repository:
+
+git clone https://github.com/<your-username>/intelligent-research-assistant.git
+
+cd intelligent-research-assistant
+
+Create virtual environment & activate:
+
+python -m venv venv
+
+source venv/bin/activate     # Linux/macOS
+
+venv\Scripts\activate        # Windows
+
+Install dependencies:
+
+pip install -r requirements.txt
+
+Run the application:
+
+streamlit run app.py
+
+## 📷 Demo
+
+
+
+https://github.com/user-attachments/assets/bfa77ba6-315c-433a-b86a-7ce84abc1b3c
+
+
+
+
+
+
